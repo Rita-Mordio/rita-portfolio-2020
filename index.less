@@ -1,11 +1,107 @@
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
 }
 
+.container {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+
+  .section-4 {
+    width: 100%;
+    box-sizing: border-box;
+
+    .category {
+      & > div:first-child {
+        display: flex;
+        align-items: center;
+        margin: 50px 0px;
+
+        .horizontal {
+          width: calc(50% - 100px);
+          height: 1px;
+          background-color: #8b8b8b;
+        }
+
+        .categoryTitle {
+          width: 200px;
+          font-size: 26px;
+          color: #acacac;
+          text-align: center;
+        }
+      }
+
+      & > div:last-child {
+        text-align: center;
+
+        .skill {
+          width: 16%;
+          margin: 25px 0px;
+          display: inline-block;
+
+          .skillImageWrap {
+            width: 115px;
+            margin: 0 auto;
+          }
+
+          .skillName {
+            font-size: 19px;
+            font-weight: 500;
+            color: #353535;
+            font-family: NanumBarunGothic;
+            text-align: center;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .container {
+      width: 100%;
+
+      .section-4 {
+        padding: 150px 100px;
+
+        .category {
+          & > div:last-child {
+            .skill {
+              width: 24%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen {
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+
+      .section-4 {
+        padding: 80px 20px;
+
+        .category {
+          & > div:last-child {
+            .skill {
+              width: 48%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 //============================================================================
 //============================================================================
@@ -14,38 +110,44 @@ html, body {
 //============================================================================
 
 .loader {
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    position: fixed;
-    z-index: 9999;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  z-index: 9999;
 
-    .load-image {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 300px;
-        height: 502px;
-        margin: -251px auto 0 -150px;
-        align-self: flex-end;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        transform-origin: bottom;
-        background-image: url("./assets/images/hot-air-balloon.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+  .load-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 502px;
+    margin: -251px auto 0 -150px;
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    background-image: url("./assets/images/hot-air-balloon.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-    .bounce {
-        animation-name: bounce;
-        animation-timing-function: linear;
-    }
+  .bounce {
+    animation-name: bounce;
+    animation-timing-function: linear;
+  }
 }
 
 @keyframes bounce {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-70px); }
-    100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-70px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
