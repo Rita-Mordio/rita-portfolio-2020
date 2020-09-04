@@ -13,12 +13,15 @@ html, body {
 //============================================================================
 //============================================================================
 
-.loaderWrap {
+.loader {
     width: 100%;
     height: 100%;
-    position: relative;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 9999;
 
-    .loader {
+    .load-image {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -34,14 +37,15 @@ html, body {
         background-position: center;
         background-repeat: no-repeat;
     }
+
+    .bounce {
+        animation-name: bounce;
+        animation-timing-function: linear;
+    }
 }
 
-.bounce {
-    animation-name: bounce;
-    animation-timing-function: linear;
-}
 @keyframes bounce {
     0%   { transform: translateY(0); }
-    50%  { transform: translateY(-100px); }
+    50%  { transform: translateY(-70px); }
     100% { transform: translateY(0); }
 }
