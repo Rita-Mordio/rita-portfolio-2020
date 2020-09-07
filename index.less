@@ -64,7 +64,7 @@ body {
 
   .section-4 {
     width: 1000px;
-    margin: 0 auto 50px;
+    margin: 0 auto;
 
     & > div {
       display: flex;
@@ -78,7 +78,6 @@ body {
       }
 
       .projectWrap {
-
         .project-2 {
           width: 400px;
           height: 305px;
@@ -105,7 +104,7 @@ body {
       .hover {
         width: 100%;
         height: 100%;
-        opacity: .99;
+        opacity: 0.99;
         text-align: left;
         display: inline-block;
         overflow: hidden;
@@ -156,9 +155,19 @@ body {
       }
 
       .hover:before {
-        content: '';
-        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3)));
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+        content: "";
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(rgba(0, 0, 0, 0)),
+          to(rgba(0, 0, 0, 0.3))
+        );
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.3) 100%
+        );
         width: 100%;
         height: 50%;
         opacity: 0;
@@ -206,13 +215,54 @@ body {
       width: 100%;
 
       .section-3 {
-        padding: 150px 100px;
+        padding: 50px 30px;
 
         .category {
           & > div:last-child {
             .skill {
               width: 24%;
             }
+          }
+        }
+      }
+
+      .section-4 {
+        width: 768px;
+        padding: 50px 30px;
+        box-sizing: border-box;
+
+        & > div {
+          justify-content: center;
+
+          .project-1 {
+            width: 400px;
+            height: 400px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+          }
+
+          .projectWrap {
+            .project-2 {
+              width: 279px;
+              height: 200px;
+              margin-bottom: 20px;
+            }
+
+            .project-3 {
+              width: 279px;
+              height: 178px;
+            }
+          }
+
+          .project-4 {
+            width: 208px;
+            height: 137px;
+          }
+
+          .project-5 {
+            width: 472px;
+            height: 137px;
+            margin-left: 20px;
           }
         }
       }
@@ -226,13 +276,56 @@ body {
       width: 100%;
 
       .section-3 {
-        padding: 80px 20px;
+        padding: 30px 20px;
 
         .category {
           & > div:last-child {
             .skill {
               width: 48%;
             }
+          }
+        }
+      }
+
+      .section-4 {
+        width: inherit;
+        padding: 30px 20px;
+        box-sizing: border-box;
+
+        & > div {
+          display: block;
+
+          .project-1 {
+            width: 100%;
+            height: 100%;
+            margin-right: 0px;
+            margin-bottom: 20px;
+          }
+
+          .projectWrap {
+            .project-2 {
+              width: 100%;
+              height: 100%;
+              margin-bottom: 20px;
+            }
+
+            .project-3 {
+              width: 100%;
+              height: 100%;
+              margin-bottom: 20px;
+            }
+          }
+
+          .project-4 {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 20px;
+          }
+
+          .project-5 {
+            width: 100%;
+            height: 100%;
+            margin-left: 0px;
           }
         }
       }
