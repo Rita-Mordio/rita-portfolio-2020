@@ -1,9 +1,13 @@
 $(document).ready(() => {
+  window.onload = () => {
+    $(".loader").fadeOut("slow");
+  };
 
-    window.onload = () => { $('.loader').fadeOut("slow") }
+  $(".project").click((event) => {
+    const projectNumber = $(event.target).closest("section").attr("number");
 
-    $("#ex1").modal({
-        fadeDuration: 250
+    $(`.modal-${projectNumber}`).modal({
+      fadeDuration: 250,
     });
-
+  });
 });
