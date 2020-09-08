@@ -9843,7 +9843,15 @@ textarea.form-control {
 
 @media (max-width: 1018px) {
   .modal {
-    width: 90%;
+    width: 80%;
+  }
+
+  .modal .imageWrap {
+    width: 100%;
+  }
+
+  .modal .imageWrap img {
+    width: 100%;
   }
 }
 
