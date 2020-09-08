@@ -9841,6 +9841,12 @@ textarea.form-control {
   right: 0;
 }
 
+@media (max-width: 1018px) {
+  .modal {
+    width: 90%;
+  }
+}
+
 
 @-webkit-keyframes loader-rotate {
   100% {
