@@ -295,6 +295,12 @@
 		 });
 	 });
 
+	 var clipboard = new ClipboardJS('.mailImage');
+
+	 clipboard.on('success', function(e) {
+		 alert("메일 주소가 복사되었습니다.")
+	 });
+
 })(jQuery);
 
 

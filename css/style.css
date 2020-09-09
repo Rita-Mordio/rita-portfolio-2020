@@ -9457,6 +9457,14 @@ textarea.form-control {
       .blog-entry .meta a:hover {
         color: #b1b493; }
 
+  .blog-entry .comment {
+    font-family: NanumBarunGothic;
+  }
+
+  .blog-entry .mailImage {
+    cursor: pointer;
+  }
+
 .block-23 ul {
   padding: 0; }
   .block-23 ul li, .block-23 ul li > a {
